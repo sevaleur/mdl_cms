@@ -4,6 +4,11 @@ export default {
   title: 'Footer', 
   fields: [
     {
+      name: 'title', 
+      type: 'string', 
+      title: 'Title'
+    }, 
+    {
       name: 'email_icon', 
       type: 'image', 
       title: 'Email icon', 
@@ -47,11 +52,6 @@ export default {
       options: {
         layout: 'grid',
       }
-    }, 
-    {
-      name: 'title', 
-      type: 'string', 
-      title: 'Title'
     }, 
     {
       name: 'btm_links', 

@@ -1,13 +1,19 @@
-import metadata from './metadata'
-import preloader from './preloader'
-import navigation from './navigation'
-import footer from './footer'
-import gallery from './gallery'
+import metadata from './schema/metadata'
+import navigation from './schema/navigation'
+import home from './schema/home'
+import about from './schema/about'
+import footer from './schema/footer'
+import gallery from './schema/gallery'
+import advert from './schema/advert'
+import film from './schema/film'
 
 export const schemaTypes = [
-  metadata, 
-  preloader,
+  metadata,
   navigation,
+  home,
+  about,
   footer,
-  gallery
+  gallery,
+  advert,
+  film
 ]
