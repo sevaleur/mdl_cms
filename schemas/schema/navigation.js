@@ -4,6 +4,11 @@ export default {
   title: 'Navigation', 
   fields: [
     {
+      name: 'title', 
+      type: 'string', 
+      title: 'Title'
+    }, 
+    {
       name: 'logo', 
       type: 'image', 
       title: 'Logo', 
@@ -21,28 +26,31 @@ export default {
       title: 'Navigation menu',
       of: [
         {
-          name: 'link',
-          title: 'Link',
-          type: 'object',
-          fields: [
-            {
-              name: 'title', 
-              type: 'string', 
-              title: 'Link title' 
+          name: 'link', 
+          type: 'reference',
+          title: 'Link', 
+          to: [ 
+            { 
+              type: 'advertising' 
             },
-            {
-              name: 'link', 
-              type: 'reference',
-              title: 'Link', 
-              to: [ 
-                { 
-                  type: 'gallery' 
-                } 
-              ]
-            }
+            { 
+              type: 'shortFilms' 
+            }, 
+            { 
+              type: 'commercial' 
+            },
+            { 
+              type: 'portraits' 
+            },
+            { 
+              type: 'stillLife' 
+            },
+            { 
+              type: 'about' 
+            } 
           ]
         }
-      ]
+      ] 
     }
   ]
 }

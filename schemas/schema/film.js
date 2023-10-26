@@ -10,6 +10,11 @@ export default {
       description: 'Add a custom slug for the URL'
     },
     {
+      name: 'title', 
+      type: 'string', 
+      title: 'Title'
+    }, 
+    {
       name: 'preview', 
       type: 'image', 
       title: 'Preview image',
@@ -36,11 +41,6 @@ export default {
           type: 'string', 
           title: 'Client'
         },
-        {
-          name: 'title', 
-          type: 'string', 
-          title: 'Title'
-        }, 
         {
           name: 'role', 
           type: 'string', 

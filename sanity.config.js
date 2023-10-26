@@ -2,7 +2,8 @@ import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
 import { visionTool } from '@sanity/vision'
 import { schemaTypes } from './schemas'
-import { colorInput } from '@sanity/color-input'
+import { media } from 'sanity-plugin-media'
+
 import { newTheme } from './theme'
 
 import Logo from './components/logo'
@@ -11,7 +12,7 @@ import ToolBar from './components/toolbar'
 import { structure } from './layout/structure'
 
 export default defineConfig({
-  name: 'default',
+  name: 'itsforgotham',
   title: 'itsforgotham',
 
   projectId: '7e395kwl',
@@ -23,8 +24,8 @@ export default defineConfig({
         structure 
       }
     ), 
-    visionTool(), 
-    colorInput()
+    visionTool(),
+    media()
   ],
   schema: {
     types: schemaTypes,

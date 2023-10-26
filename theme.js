@@ -24,7 +24,7 @@ export const newTheme = buildLegacyTheme({
 
   // Default button
   '--default-button-color': '#cfd7d6',
-  '--default-button-primary-color': props['--blue'],
+  '--default-button-primary-color': props['--white'],
   '--default-button-success-color': props['--green'],
   '--default-button-warning-color': props['--yellow'],
   '--default-button-danger-color': props['--red'],
@@ -39,5 +39,5 @@ export const newTheme = buildLegacyTheme({
   '--main-navigation-color': props['--black'],
   '--main-navigation-color--inverted': props['--white'],
 
-  '--focus-color': props['--blue'],
+  '--focus-color': props['--white'],
 })

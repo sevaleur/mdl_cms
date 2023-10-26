@@ -1,25 +1,13 @@
 export default {
-  name: 'home',
+  name: 'commercial',
   type: 'document', 
-  title: 'Home', 
+  title: 'Commercial', 
   fields: [
     {
       name: 'title', 
       type: 'string', 
-      title: 'Title'
+      title: 'Title', 
     }, 
-    {
-      name: 'logo', 
-      type: 'image', 
-      title: 'Logo', 
-      fields: [
-        {
-          name: 'alt', 
-          type: 'string', 
-          title: 'Alternative text'
-        }
-      ]
-    },
     {
       name: 'showcase',
       type: 'array',
@@ -28,16 +16,10 @@ export default {
         {
           name: 'link',
           type: 'reference',
-          title: 'Showcase link',
+          title: 'Project',
           to: [
             {
               type: 'gallery'
-            },
-            {
-              type: 'advert'
-            }, 
-            {
-              type: 'film'
             }
           ]
         },

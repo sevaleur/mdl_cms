@@ -20,18 +20,6 @@ export default {
             title: 'Project Description'
         },
         {
-            name: 'preview',
-            type: 'image', 
-            title: 'Preview', 
-            fields: [
-                {
-                    name: 'alt', 
-                    type: 'string', 
-                    title: 'Alternative text'
-                }
-            ]
-        }, 
-        {
           name: 'images',
           type: 'array',
           title: 'Images',
@@ -48,6 +36,7 @@ export default {
                   name: 'alt',
                   type: 'string',
                   title: 'Alternative text',
+                  validation: Rule => Rule.required()
                 },
               ],
             },

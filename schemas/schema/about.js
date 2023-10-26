@@ -4,6 +4,11 @@ export default {
   title: 'About', 
   fields: [
     {
+      name: 'title', 
+      type: 'string', 
+      title: 'Title'
+    }, 
+    {
       name: 'header', 
       type: 'object', 
       title: 'Header', 
@@ -178,6 +183,11 @@ export default {
                   name: 'alt', 
                   type: 'string', 
                   title: 'Alternative text'
+                },
+                {
+                  name: 'link', 
+                  type: 'url', 
+                  title: 'Link'
                 }
               ]
             }
@@ -195,8 +205,9 @@ export default {
       fields: [
         {
           name: 'title', 
-          type: 'string', 
-          title: 'Title'
+          type: 'text', 
+          title: 'Title',
+          rows: 5
         }, 
         {
           name: 'image', 

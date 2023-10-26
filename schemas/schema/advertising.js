@@ -1,24 +1,12 @@
 export default {
-  name: 'home',
+  name: 'advertising',
   type: 'document', 
-  title: 'Home', 
+  title: 'Advertising', 
   fields: [
     {
       name: 'title', 
       type: 'string', 
-      title: 'Title'
-    }, 
-    {
-      name: 'logo', 
-      type: 'image', 
-      title: 'Logo', 
-      fields: [
-        {
-          name: 'alt', 
-          type: 'string', 
-          title: 'Alternative text'
-        }
-      ]
+      title: 'Title', 
     },
     {
       name: 'showcase',
@@ -28,16 +16,10 @@ export default {
         {
           name: 'link',
           type: 'reference',
-          title: 'Showcase link',
+          title: 'Project',
           to: [
             {
-              type: 'gallery'
-            },
-            {
               type: 'advert'
-            }, 
-            {
-              type: 'film'
             }
           ]
         },
