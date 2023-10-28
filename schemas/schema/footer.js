@@ -4,9 +4,19 @@ export default {
   title: 'Footer', 
   fields: [
     {
-      name: 'title', 
+      name: 'connect', 
       type: 'string', 
-      title: 'Title'
+      title: 'Connect'
+    }, 
+    {
+      name: 'expand', 
+      type: 'string', 
+      title: 'Expand'
+    }, 
+    {
+      name: 'close', 
+      type: 'string', 
+      title: 'Close'
     }, 
     {
       name: 'email_icon', 

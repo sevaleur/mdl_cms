@@ -6,6 +6,7 @@ import { media } from 'sanity-plugin-media'
 
 import { newTheme } from './theme'
 
+import Icon from './components/icon'
 import Logo from './components/logo'
 import ToolBar from './components/toolbar'
 
@@ -14,7 +15,7 @@ import { structure } from './layout/structure'
 export default defineConfig({
   name: 'itsforgotham',
   title: 'itsforgotham',
-
+  icon: Icon,
   projectId: '7e395kwl',
   dataset: 'production',
   basePath: '/admin',
@@ -33,7 +34,7 @@ export default defineConfig({
   studio: {
     components: {
       logo: Logo, 
-      toolMenu: ToolBar
+      toolMenu: ToolBar,
     }
   },
   theme: newTheme

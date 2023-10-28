@@ -1,22 +1,22 @@
 import React from "react"
 
-const Logo = (props) => 
+const Icon = (props) => 
 {
   return (
-    <div style={{ borderRight: '1px solid #5b5e5e' }}>
+    <div style={{ }}>
       <img 
         src="/static/logo_nobg.png" 
         alt="logo" 
-        height={50} 
-        width={50} 
+        height={40} 
+        width={40} 
         style={
           { 
-            margin: '1rem'
+            objectFit: 'cover'
           }
         } 
-      />
+      />,
     </div>
   )
 }
 
-export default Logo
+export default Icon
