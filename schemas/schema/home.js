@@ -7,23 +7,18 @@ export default {
       name: 'title', 
       type: 'string', 
       title: 'Title'
-    }, 
+    },
     {
-      name: 'logo', 
-      type: 'image', 
-      title: 'Logo', 
-      fields: [
-        {
-          name: 'alt', 
-          type: 'string', 
-          title: 'Alternative text'
-        }
-      ]
+      name: 'name', 
+      type: 'string', 
+      title: 'Name',
+      description: 'Shown in bottom left corner'
     },
     {
       name: 'showcase',
       type: 'array',
       title: 'Showcase',
+      validation: Rule => Rule.min(1).max(5).unique(),
       of: [
         {
           name: 'link',

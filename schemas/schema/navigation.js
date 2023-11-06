@@ -24,6 +24,7 @@ export default {
       name: 'nav_items', 
       type: 'array', 
       title: 'Navigation menu',
+      validation: Rule => Rule.unique(),
       of: [
         {
           name: 'link', 

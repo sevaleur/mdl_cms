@@ -12,6 +12,7 @@ export default {
       name: 'showcase',
       type: 'array',
       title: 'Showcase',
+      validation: Rule => Rule.min(1).unique(),
       of: [
         {
           name: 'link',
