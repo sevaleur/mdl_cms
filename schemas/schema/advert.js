@@ -50,8 +50,8 @@ export default {
         {
           name: 'client', 
           type: 'string', 
-          title: 'Client/Agency',
-          validation: Rule => Rule.required()
+          title: 'Client/Agency name',
+          validation: Rule => Rule.required().max(26)
         },
         {
           name: 'role', 

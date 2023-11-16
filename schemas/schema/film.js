@@ -45,7 +45,6 @@ export default {
           name: 'client_title', 
           type: 'string', 
           title: 'Client/Agency title',
-          validation: Rule => Rule.required()
         },
         {
           name: 'client', 
