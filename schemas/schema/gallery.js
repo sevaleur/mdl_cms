@@ -46,11 +46,6 @@ export default {
           },
         },
         {
-          name: 'back', 
-          type: 'string', 
-          title: 'Back button text'
-        },
-        {
           name: 'close', 
           type: 'string', 
           title: 'Close button text',

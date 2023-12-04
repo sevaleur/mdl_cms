@@ -32,11 +32,6 @@ export default {
       title: 'Video url'
     },
     {
-      name: 'uploaded_video',
-      type: 'file', 
-      title: 'Upload video'
-    },
-    {
       name: 'project',
       type: 'object', 
       title: 'Project info', 
