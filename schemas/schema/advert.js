@@ -29,7 +29,18 @@ export default {
     {
       name: 'selected_video', 
       type: 'url',
-      title: 'Video url'
+      title: 'Video url for desktop ( ratio 16:9 )'
+    },
+    {
+      name: 'selected_phone', 
+      type: 'url',
+      title: 'Video url for tablets/phone ( ratio 9:16 )'
+    },
+    {
+      name: 'duration', 
+      type: 'string',
+      title: 'Video duration',
+      validation: Rule => Rule.required()
     },
     {
       name: 'project',

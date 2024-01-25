@@ -32,6 +32,12 @@ export default {
       title: 'Video url'
     },
     {
+      name: 'duration', 
+      type: 'string',
+      title: 'Video duration',
+      validation: Rule => Rule.required()
+    },
+    {
       name: 'project',
       type: 'object', 
       title: 'Project info', 
